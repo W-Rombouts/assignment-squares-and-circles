@@ -42,7 +42,6 @@ for (let i = 0; i < yArray.length; i++) {
     for (let ii = 0; ii < xArray.length; ii++) {
         if (ii==0) {
             mijnsvg.appendChild(addSquare(xArray[ii],yArray[i],rgb))
-            console.log(rgb)
         }
         else{
             mijnsvg.appendChild(addCircle(xArray[ii],yArray[i],rgb))
@@ -50,7 +49,6 @@ for (let i = 0; i < yArray.length; i++) {
         
     }
     red = red - (255/yArray.length)
-    console.log(red)
     rgb = setRgb(r=red)
 }
 
